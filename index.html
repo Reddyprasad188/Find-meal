@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Meal Finder</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">🍴 MEAL FINDER</div>
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </header>
+
+  <!-- Side drawer -->
+  <aside id="drawer" class="drawer">
+    <button id="closeBtn" class="close-btn">✕</button>
+    <ul id="catList"></ul>
+  </aside>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search recipes here ..." />
+      <button id="searchBtn">🔍</button>
+    </div>
+    <h1>What are your favorite cuisines?</h1>
+    <p>PERSONALIZE YOUR EXPERIENCE</p>
+  </section>
+
+  <main class="container">
+    <!-- Breadcrumb (meal detail page only) -->
+    <div id="crumb" class="crumb hidden"></div>
+
+    <!-- Category description -->
+    <section id="catInfo" class="cat-info hidden"></section>
+
+    <!-- Meal detail -->
+    <section id="mealDetail" class="meal-detail hidden"></section>
+
+    <!-- Meals grid (search/category) -->
+    <section id="mealsSection" class="hidden">
+      <h2 class="section-title">MEALS</h2>
+      <div id="mealsGrid" class="grid meals-grid"></div>
+    </section>
+
+    <!-- Categories grid -->
+    <section id="categoriesSection">
+      <h2 class="section-title">CATEGORIES</h2>
+      <div id="catGrid" class="grid cats-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+  <script src="app.js"></script>
+</body>
+</html>
